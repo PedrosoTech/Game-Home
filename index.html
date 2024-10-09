@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>game-home</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <h1 class="game-title">Game-Home</h1>
+        </header>
+
+        <main>
+            <form id="gameForm" method="POST" action="process.php">
+                <section id="level-container" class="level">
+                    <!-- Primeira etapa do cadastro -->
+                    <div class="level-content active" id="level-1">
+                        <h2>Nível 1: Nome de Usuário</h2>
+                        <input type="text" name="username" placeholder="Digite seu nome de usuário" id="username"
+                            required>
+                        <button class="next-btn" data-next="level-2">Próximo nível</button>
+                    </div>
+
+                    <!-- Segunda etapa do cadastro -->
+                    <div class="level-content" id="level-2">
+                        <h2>Nível 2: E-mail</h2>
+                        <input type="email" name="email" placeholder="Digite seu e-mail" id="email" required>
+                        <button class="next-btn" data-next="level-3">Próximo nível</button>
+                    </div>
+
+                    <!-- Terceira etapa do cadastro -->
+                    <div class="level-content" id="level-3">
+                        <h2>Nível 3: Senha</h2>
+                        <input type="password" name="password" placeholder="Digite sua senha" id="password" required>
+                        <!-- <a href="success.html"></a><button> Finalizar </button></a> -->
+                        <button type="submit">Finalizar</button:>
+                    </div>
+
+                    <!-- Finalização -->
+                    <div class="level-content" id="finish">
+                        <h2>Cadastro Completo!</h2>
+                        <p>Parabéns! Você completou todos os níveis.</p>
+                        <button class="finish-btn">Iniciar Jogo</button>
+                    </div>
+                </section>
+            </form>
+        </main>
+    </div>
+
+    <script src="scripts.js"></script>
+</body>
+
+</html>

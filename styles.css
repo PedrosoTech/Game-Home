@@ -1,0 +1,147 @@
+/* Resetando margens e estilos */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Cinzel', serif; /* Fonte com estilo de fantasia */
+    background-color: #0d1b2a;  /* Fundo azul-marinho */
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+    background-image: url('contents/c84f223d53773a3ce0f5dc2818d7db25.gif'); /* Imagem de fundo de fantasia */
+    background-size: cover;
+}
+
+/* Container principal */
+.container {
+    text-align: center;
+    max-width: 650px;
+    padding: 30px;
+    border-radius: 15px;
+    background: rgba(255, 255, 255, 0.1);  /* Fundo transparente para dar foco ao conteúdo */
+    border: 5px solid #d4af37; /* Borda dourada */
+    box-shadow: 0 0 30px rgba(212, 175, 55, 0.5), 0 0 50px rgba(212, 175, 55, 0.3);
+    backdrop-filter: blur(5px); /* Suave efeito de desfoque */
+    position: relative;
+}
+
+/* Ornamento superior da caixa */
+.container:before {
+    content: '';
+    position: absolute;
+    top: -20px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80px;
+    height: 30px;
+    background-image: url('ornament-top.png'); /* Adiciona um ornamento decorativo no topo */
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+/* Título do jogo */
+.game-title {
+    font-size: 4rem;
+    color: #d4af37; /* Dourado */
+    font-family: 'Uncial Antiqua', serif;
+    margin-bottom: 30px;
+    text-shadow: 2px 2px 10px #d4af37;
+}
+
+/* Níveis de cadastro */
+.level-content {
+    display: none;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
+    transform: translateY(20px);
+}
+
+.level-content.active {
+    display: block;
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Campos de entrada */
+input[type="text"], input[type="email"], input[type="password"] {
+    width: 80%;
+    padding: 12px;
+    margin-top: 20px;
+    border-radius: 5px;
+    border: 2px solid #d4af37; /* Borda dourada */
+    background: #1c2541;
+    color: #fff;
+    font-size: 1.1rem;
+    transition: border-color 0.3s, box-shadow 0.3s;
+    box-shadow: 0 0 10px rgba(212, 175, 55, 0.4); /* Sombra leve */
+}
+
+input[type="text"]:focus, input[type="email"]:focus, input[type="password"]:focus {
+    border-color: #fddb3a;
+    outline: none;
+    box-shadow: 0 0 20px rgba(253, 219, 58, 0.7); /* Efeito de foco mágico */
+}
+
+/* Botões */
+button {
+    margin-top: 15px;
+    padding: 12px 25px;
+    border: 2px solid #d4af37; /* Borda dourada */
+    background-color: #1c2541;
+    color: #fff;
+    font-size: 1.2rem;
+    font-family: 'Cinzel', serif;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, box-shadow 0.3s, transform 0.3s;
+    box-shadow: 0 0 15px rgba(212, 175, 55, 0.5); /* Brilho suave */
+}
+
+button:hover {
+    background-color: #d4af37;
+    color: #1c2541;
+    transform: scale(1.1); /* Efeito de escala ao passar o mouse */
+    box-shadow: 0 0 30px rgba(212, 175, 55, 0.7);
+}
+
+/* Botão de finalização */
+button.finish-btn {
+    background-color: #f72249;
+    border-color: #f72249;
+}
+
+button.finish-btn:hover {
+    background-color: #ff66a3;
+    border-color: #ff66a3;
+}
+
+/* Texto no formulário */
+h2 {
+    font-family: 'Cinzel', serif;
+    font-size: 2rem;
+    color: #d4af37;
+    text-shadow: 1px 1px 5px #d4af37;
+    margin-bottom: 15px;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .container {
+        width: 90%;
+    }
+
+    .game-title {
+        font-size: 2.5rem;
+    }
+
+    input[type="text"], input[type="email"], input[type="password"] {
+        width: 100%;
+    }
+}

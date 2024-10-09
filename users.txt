@@ -1,0 +1,7 @@
+Nome de Usuário: teste, E-mail: teste@teste, Senha: teste
+Nome de Usuário: brubio, E-mail: brubio@contato.com, Senha: biladinha169
+Nome de Usuário: testinho, E-mail: testinho@gmail.com, Senha: testinhadinhamini
+Nome de Usuário: agnolio, E-mail: agnoliobill@outlook.com, Senha: vamosIRpraLONGE
+Nome de Usuário: teste1, E-mail: teste@teste.com, Senha: teste
+Nome de Usuário: teste2, E-mail: teste2@teste, Senha: testeeee
+Nome de Usuário: testebowser, E-mail: bowser@gmails.com, Senha: teste
